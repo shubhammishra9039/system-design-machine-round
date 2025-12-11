@@ -1,0 +1,74 @@
+# -------------------------
+# Node & Backend
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build / Dist
+dist/
+build/
+.tmp/
+temp/
+
+# Logs
+logs/
+*.log
+logs/*.log
+debug.log
+
+# PM2 Logs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache/
+.nyc_output/
+coverage/
+.next/
+.vscode/
+
+# -------------------------
+# React Frontend
+# -------------------------
+# dependencies
+frontend/node_modules/
+
+# builds
+frontend/build/
+frontend/.cache/
+
+# env
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# -------------------------
+# Misc
+# -------------------------
+*.zip
+*.tar
+*.tgz
+
+# Local database dumps
+dump.rdb
+*.sql
+*.sqlite
