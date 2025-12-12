@@ -1,9 +1,9 @@
 
 import mongoose from "mongoose"
 
- const dbConnection =  ()=>{
+ const dbConnection =   async ()=>{
     try{
-       mongoose.connect("mongodb://localhost:27017/TaskManagerApp").then(()=>{
+        await mongoose.connect("mongodb://localhost:27017/TaskManagerApp").then(()=>{
         console.log("DB Connect Successfully")
        }).catch(()=>{
         console.error("DB connect Failed ")
