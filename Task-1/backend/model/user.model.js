@@ -19,11 +19,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       type: String,
     },
-    task: {
+    task: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "Task",
       default: null,
-    },
+    }],
   },
   { timestamps: true }
 );

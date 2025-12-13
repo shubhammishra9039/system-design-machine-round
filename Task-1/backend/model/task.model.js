@@ -2,11 +2,10 @@ import mongoose from "mongoose";
 
 const taskSchema = new mongoose.Schema(
   {
-    user: {
+    user: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      default:null
-    },
+    }],
     taskName: {
       type: String,
       required: true,
@@ -23,3 +22,6 @@ const taskSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+
+export default mongoose.model("Task",taskSchema)
