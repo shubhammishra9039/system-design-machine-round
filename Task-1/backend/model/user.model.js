@@ -24,6 +24,9 @@ const userSchema = new mongoose.Schema(
       ref: "Task",
       default: null,
     }],
+    token:{
+      type:String
+    }
   },
   { timestamps: true }
 );
