@@ -22,7 +22,6 @@ app.get("/",  (req, res) => {
   res.send("Hello");
 });
 
-console.log("hello")
 
 app.listen(prot, () => {
   console.log(`server start  ${prot} `);
